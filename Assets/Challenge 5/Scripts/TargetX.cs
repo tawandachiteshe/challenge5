@@ -61,6 +61,7 @@ public class TargetX : MonoBehaviour
     {
         Destroy(gameObject);
 
+        // A bad game design flaw
         if (other.gameObject.CompareTag("Sensor") && !gameObject.CompareTag("Bad"))
         {
             gameManagerX.GameOver();
