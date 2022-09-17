@@ -44,6 +44,12 @@ public class GameManagerX : MonoBehaviour
         {
             countDownTimer -= Time.deltaTime;
             countDownText.text = "Timer: " + Mathf.Round(countDownTimer);
+
+            if (countDownTimer <= 0)
+            {
+                isGameActive = false;
+            }
+            
         }
 
     }
